@@ -35,3 +35,5 @@ README будет расширяться по мере расширения фу
 Валидация полей также будет реализована через JS, поэтому сейчас все поля стилизованы как невалидные.
 
 netlify: https://pensive-yonath-fd1dfc.netlify.app
+
+PR: https://github.com/DmitryZablotsky/middle.messenger.praktikum.yandex/pull/1
