@@ -218,3 +218,12 @@ body {
     }
   }
 }
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__status {
+     color: $attentionColor;
+  }
+}
