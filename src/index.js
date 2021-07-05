@@ -10,22 +10,22 @@ const root = document.querySelector("#root");
 
 switch (window.location.pathname) {
     case "/": {
-        root.innerHTML = mainPage;
+        root.innerHTML = mainPage();
         break;
     }
 
     case "/authorisation": {
-        root.innerHTML = authorizationPage;
+        root.innerHTML = authorizationPage();
         break;
     }
 
     case "/registration": {
-        root.innerHTML = registrationPage;
+        root.innerHTML = registrationPage();
         break;
     }
 
     case "/profile": {
-        root.innerHTML = profilePage;
+        root.innerHTML = profilePage();
         break;
     }
 

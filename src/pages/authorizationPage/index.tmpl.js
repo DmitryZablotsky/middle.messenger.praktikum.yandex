@@ -1,23 +1,23 @@
 export const authorizationPageTmpl =`
-    <div class="{{classes.layout}}">
-        <main class="{{classes.mainSection}}">
-            <h1 class="{{classes.header}}">
+    <div class="layout layout_error">
+        <main class="main-section">
+            <h1 class="form-header">
                 Авторизация
             </h1>
-            <form class="{{classes.formContainer}}">
-                <div class="{{classes.formField}}">
-                    <label for="login" class="{{classes.fieldLabel}}">Логин</label>
-                    <input type="text" name="login" id="login" class="{{classes.input}}">
-                    <span class="{{classes.validationMessage}}">пользователь с таким логином не существует</span>
+            <form class="form-container">
+                <div class="form-field">
+                    <label for="login" class="form-field__label">Логин</label>
+                    <input type="text" name="login" id="login" class="form-field__input">
+                    <span class="form-field__validation-message">пользователь с таким логином не существует</span>
                 </div>
-                <div class="{{classes.formField}}">
-                    <label for="password" class="{{classes.fieldLabel}}">Пароль</label>
-                    <input type="password" name="password" id="password" class="{{classes.input}}">
-                    <span class="{{classes.validationMessage}}">введен неправильный пароль</span>
+                <div class="form-field">
+                    <label for="password" class="form-field__label">Пароль</label>
+                    <input type="password" name="password" id="password" class="form-field__input">
+                    <span class="form-field__validation-message">введен неправильный пароль</span>
                 </div>
-                <button class="{{classes.submitBtn}}">Войти</button>
+                <button class="form-field__submitBtn richBtn">Войти</button>
             </form>
-            <a class="{{classes.poorBtn}}" href="/registration">
+            <a class="poorBtn" href="/registration">
                 <span>Нет аккаунта?</span>
                 <span>Зарегистирироваться!</span>
             </a>

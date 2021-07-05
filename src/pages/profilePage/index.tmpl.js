@@ -1,37 +1,37 @@
 export const profilePageTmpl =`
-    <div class="{{classes.layout}}">
-        <div class="{{classes.profilePhoto}}"></div>
-        <form class="{{classes.formContainer}}">
-            <div class="{{classes.readableField}}">
-                <span class="{{classes.readableFieldLabel}}">Почта</span>
-                <span class="{{classes.readableFieldValue}}">example@test.com</span>
+    <div class="layout layout_lightBG">
+        <div class="profile-photo"></div>
+        <form class="profile-form-container">
+            <div class="profile-form-readable-field">
+                <span class="profile-form-readable-field__label">Почта</span>
+                <span class="profile-form-readable-field__value">example@test.com</span>
             </div>
-            <div class="{{classes.readableField}}">
-                <span class="{{classes.readableFieldLabel}}">Логин</span>
-                <span class="{{classes.readableFieldValue}}">example</span>
+            <div class="profile-form-readable-field">
+                <span class="profile-form-readable-field__label">Логин</span>
+                <span class="profile-form-readable-field__value">example</span>
             </div>
-            <div class="{{classes.readableField}}">
-                <span class="{{classes.readableFieldLabel}}">Имя</span>
-                <span class="{{classes.readableFieldValue}}">example</span>
+            <div class="profile-form-readable-field">
+                <span class="profile-form-readable-field__label">Имя</span>
+                <span class="profile-form-readable-field__value">example</span>
             </div>
-            <div class="{{classes.editableField}}">
-                <div class="{{classes.inputContainer}}">
-                    <label for="lastName" class="{{classes.editableFieldLabel}}">Фамилия</label>
-                    <input type="text" name="lastName" id="lastName" class="{{classes.editableFieldInput}}">
-                    <span class="{{classes.editableFieldControls}}">&#10003;</span>           
-                    <span class="{{classes.editableFieldControls}}">&#10008;</span>           
+            <div class="profile-form-editable-field">
+                <div class="profile-form-editable-field__input-container">
+                    <label for="lastName" class="profile-form-editable-field__label">Фамилия</label>
+                    <input type="text" name="lastName" id="lastName" class="profile-form-editable-field__input">
+                    <span class="profile-form-editable-field__controls">&#10003;</span>           
+                    <span class="profile-form-editable-field__controls">&#10008;</span>           
                 </div>
-                <span class="{{classes.editableFieldMessage}}">укажите фамилию</span>
+                <span class="profile-form-editable-field__validation-message">укажите фамилию</span>
             </div>
-            <div class="{{classes.readableField}}">
-                <span class="{{classes.readableFieldLabel}}">Телефон</span>
-                <span class="{{classes.readableFieldValue}}">+7 (912) 345-67-89</span>
+            <div class="profile-form-readable-field">
+                <span class="profile-form-readable-field__label">Телефон</span>
+                <span class="profile-form-readable-field__label">+7 (912) 345-67-89</span>
             </div>
         </form>
-        <a class="{{classes.poorBtn}}">
+        <a class="poorBtn">
             сменить пароль
         </a>
-        <button class="{{classes.attentionButton}}">
+        <button class="attentionBtn">
             Выйти
         </button>
     </div>
