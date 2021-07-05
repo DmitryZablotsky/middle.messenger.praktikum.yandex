@@ -8,3 +8,27 @@
 [build]
 publish = "dist"
 command = "npm run build"
+
+[[redirects]]
+from = "/registration"
+to = "/"
+status = 200
+force = true
+
+[[redirects]]
+from = "/authorisation"
+to = "/"
+status = 200
+force = true
+
+[[redirects]]
+from = "/profile"
+to = "/"
+status = 200
+force = true
+
+[[redirects]]
+from = "/*"
+to = "/"
+status = 200
+force = true
