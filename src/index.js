@@ -8,6 +8,8 @@ import "./index.scss";
 
 const root = document.querySelector("#root");
 
+console.log(window.location.pathname);
+
 switch (window.location.pathname) {
     case "/": {
         root.innerHTML = mainPage();
