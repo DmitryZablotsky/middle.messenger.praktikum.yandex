@@ -1,0 +1,229 @@
+$textColor: #3D405B;
+$buttonColor: #81B29A;
+$lightBGColor: #F4F1DE;
+$controlsColor: #F2CC8F;
+$attentionColor: #E07A5F;
+
+@mixin reset-btn-styles {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: $textColor;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px $controlsColor inset;
+}
+
+body {
+  margin: 0;
+}
+
+.richBtn {
+  @include reset-btn-styles;
+  color: $lightBGColor;
+  background-color: $buttonColor;
+  border-radius: 5px;
+  font-size: 20px;
+
+  &:hover {
+    box-shadow: 0 0 5px $buttonColor;
+  }
+}
+
+.attentionBtn {
+  @include reset-btn-styles;
+  color: $attentionColor;
+  background-color: $lightBGColor;
+  border: 2px solid $attentionColor;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px;
+  width: 250px;
+
+  &:hover {
+    box-shadow: 0 0 5px $attentionColor;
+  }
+}
+
+.poorBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $buttonColor;
+  margin-bottom: 20px;
+  text-decoration: none;
+
+  &_light {
+    color: $lightBGColor;
+  }
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.layout {
+  height: 100vh;
+  background: $attentionColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &_lightBG {
+    background: $lightBGColor;
+  }
+}
+
+.main-section {
+  background-color: $lightBGColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-header,
+.main-header{
+  font-weight: 400;
+}
+
+.form-field {
+  width: 250px;
+  margin: 8px 60px;
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+
+  &__validation-message {
+    font-size: 14px;
+    font-weight: lighter;
+    color: $attentionColor;
+  }
+
+  &__input {
+    background-color: $controlsColor;
+    border: none;
+    border-radius: 7px;
+    line-height: 2;
+    font-weight: 600;
+  }
+
+  &__submitBtn {
+    align-self: center;
+    width: 250px;
+    padding: 10px 20px;
+    margin: 25px 0 15px;
+  }
+}
+
+.profile-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: $controlsColor;
+  margin-bottom: 100px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.profile-form {
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    min-width: 500px;
+    max-width: 800px;
+    margin-bottom: 75px;
+  }
+
+  &-readable-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    border-bottom: 2px solid $textColor;
+    margin-bottom: 25px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &-editable-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+    &__input {
+      width: 75%;
+      background-color: $lightBGColor;
+      border: 2px solid $attentionColor;
+      line-height: 2;
+      font-weight: 600;
+    }
+
+    &__input-container {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__validation-message {
+      align-self: flex-end;
+      font-size: 14px;
+      color: $attentionColor;
+    }
+
+    &__controls {
+      position: absolute;
+      left: calc(100% - 21px);
+      padding: 4px 4px 5px;
+      background-color: $controlsColor;
+      border: 2px solid $attentionColor;
+
+      &:first-of-type {
+        left: calc(100% - 41px);
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__status {
+     color: $attentionColor;
+  }
+}

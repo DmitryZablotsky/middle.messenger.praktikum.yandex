@@ -1,3 +1,6 @@
-/dist/
 /node_modules/
+/dist/
 /.idea/
+/.cache/
+/tests-second-floor/
+/.parcel-cache/
